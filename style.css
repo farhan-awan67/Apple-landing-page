@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  width: 87%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 18px;
+}
+
+.nav #apple,
+#menu,
+#search {
+  font-size: 25px;
+}
+
+.nav #apple {
+  margin-right: 75px;
+  display: inline;
+}
+
+.info {
+  margin: 0 auto;
+  width: 80%;
+  height: 150px;
+}
+
+#content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.title span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.paras a {
+  font-size: 23px;
+  font-weight: 300;
+  color: black;
+  padding-right: 10px;
+}
+
+.iphone {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(iPhone-15-Ultra.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+  .nav {
+    width: 100%;
+    padding: 0 25px;
+  }
+  .content,
+  .title,
+  .paras,
+  .iphone {
+    width: 100%;
+  }
+  .iphone {
+    padding: 0 25px;
+  }
+}
